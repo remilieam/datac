@@ -1,0 +1,68 @@
+body 
+{
+    color: black;
+    font: 18px Times New Roman;
+    border: black;
+    text-align: justify;
+    background-image: url("../../images/logo.png");  
+    background-position: center center;
+    background-repeat: no-repeat; 
+    background-attachment: fixed; 
+    background-size: cover;
+}
+
+.erreur 
+{
+    border-radius: 10px;
+    background-color: rgb(236,74,79);
+    border: black 1px solid;
+    margin-right: 350px;
+    margin-left: 350px;
+    color: black;
+    padding-left: 10px;
+    padding-right: 15px;
+}
+
+section
+{
+    border-radius: 10px;
+}
+
+article
+{
+    border-radius: 10px;
+    margin-right: 340px;
+    margin-left: 340px;
+    padding-left: 10px;
+    padding-right: 15px;
+    vertical-align: top;
+    border: black 1px solid;
+    background-color: rgb(000,163,263); /* Fond à moitié transparent */
+    color: black;
+}
+
+h2 
+{
+    text-align: center;
+    font: 36px Castellar;
+}
+
+.validation
+{
+    border-radius: 10px;
+    margin-left: 200px;
+    float: left;
+    font-size: 18px;
+}
+
+.validation: hover
+{
+    box-shadow: 10px 10px 5px #888;
+}
+
+.barre
+{
+    margin-left: 800px;
+    padding-left: 50px;
+    font: 22px Times New Roman;
+}

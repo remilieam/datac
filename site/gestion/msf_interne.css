@@ -1,0 +1,219 @@
+body 
+{
+    color: black;
+    font: 18px Times New Roman;
+    border: black;
+    text-align: justify;
+    background-image: url("../../images/logo.png");  
+    background-position: center center;
+    background-repeat: no-repeat; 
+    background-attachment: fixed; 
+    background-size: cover;
+}
+
+section
+{
+    border-radius: 10px;
+    border: 1px black solid;
+    background-color: rgb(153,217,234);
+    margin-right: 300px;
+    margin-left: 300px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+article
+{
+    border-radius: 10px;
+    padding-left: 10px;
+    padding-right: 15px;
+    vertical-align: top;
+    /* Fond à moitié transparent */
+    color: black;
+}
+
+nav 
+{
+    float: left;
+    border: 1px black solid;
+    background-color: rgb(040,103,263);
+    margin-left: 5px;
+    padding-left: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 5px;
+    margin-right: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.menu 
+{
+    margin-left: 220px;
+    margin-right: 170px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 1px;
+    margin-bottom: 1px;
+    text-align: right;
+}
+
+.menu_tab
+{
+    margin-left: 3px;
+    width: 98%;
+}
+
+.menu_tab td 
+{
+    margin-left: 10px;
+    padding-left: 25px;
+    padding-right: 25px;
+    text-align: center;
+}
+
+.menu_tab td a 
+{
+    text-decoration: none;
+}
+
+.menu_tab td: hover 
+{
+    background-color: white;
+    color: blue;
+}
+
+.inscription
+{
+	text-align: right;
+}
+
+.text 
+{
+    margin-left: 30px;
+    font: 22px Times New Roman;
+    text-align: center;
+}
+
+
+.barre
+{
+    margin-left: 100px;
+    float: left;
+    font: 22px Times New Roman;
+}
+
+.bar
+{
+    margin-left: 50px;
+    float: left;
+    font: 20px Times New Roman;
+}
+
+.validation
+{
+    border-radius: 10px;
+    margin-left: 200px;
+    float: left;
+    font-size: 18px;
+}
+
+.connect
+{
+    border: 1px black solid;
+    border-radius: 4px;
+    text-decoration: none;
+    font: 20px black;
+    margin-left: 250px;
+    margin-right: 5px;
+    padding-left: 5px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    padding-right: 5px;
+    text-align: center;
+    width: 300px;
+    background-color: white;
+}
+
+header
+{
+    margin-top: 3px;
+    padding-left: 15px;
+    border-radius: 10px;
+    background-color: rgb(72,104,369);
+    border: 1px solid black;
+    position: fixed;
+    width: 96%;
+    height: 20%;
+    top: 0px;
+    margin-right: 5px;
+    margin-left: 5px;
+    padding-right: 15px;
+}
+
+.connexion 
+{
+    text-align: right;
+	padding-bottom: 0px;
+	margin-top: 2px;
+	margin-bottom: 2px;
+}
+
+.haut 
+{
+    font: 28px Times New Roman;
+    text-align: center;
+    padding-top: 0px;
+    margin-top: 10px;
+}
+
+.deconnexion
+{ 
+    text-align: left;
+    margin-top: 0px;
+    padding-top: 0px;
+}
+
+legend 
+{
+    color: white;
+    text-decoration: none;
+}
+
+legend: hover
+{
+    font: 25px Castellar;
+}
+
+.nom_colonne 
+{
+    border: 1px black solid;
+    width: 90%;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-bottom: 5px;
+    background-color: rgb(72,124,369);
+}
+
+.nom_colonne tab: hover
+{
+    color: black;
+    background-color: rgb(72,124,369);
+}
+
+
+.tab2
+{ 
+    border: 1px black solid;
+    width: 90%;
+    text-align: center;
+    margin-left: 50px;
+}
+
+.tab2 td 
+{ 
+    border: 1px black dashed;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-bottom: 5px;
+}

@@ -1,0 +1,244 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+	
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>DAT&Agrave;C – BASE DE DONN&Eacute;ES</title>
+		<meta name="keywords" content="" />
+		<meta name="description" content="" />
+		<link href="default.css" rel="stylesheet" type="text/css" media="all" />
+		<link href="fonts.css" rel="stylesheet" type="text/css" media="all" />
+		<link rel="icon" type="image/png" href="images/datac_logo.png" />
+		<!--[if IE 6]>
+		<link href="default_ie6.css" rel="stylesheet" type="text/css" />
+		<![endif]-->
+	</head>
+	
+	<body>
+		<div id="wrapper">
+			<div id="header-wrapper">
+				<div id="header" class="container">
+					<div id="logo">
+						<h1><a href="index.html">DAT&Agrave;C</a></h1>
+						<p>Dispositifs et Aides Techniques &Agrave; la Communication</p>
+					</div>
+				</div>
+			</div>
+			<div id="menu-wrapper">
+				<div id="menu" class="container">
+					<ul>
+						<li><a href="index.html">ACCUEIL</a></li>
+						<li class="current_page_item"><a href="bdd.html">BASE DE DONN&Eacute;ES</a></li>
+						<li><a href="site.html">SITE DAT&Agrave;C</a></li>
+						<li><a href="gestion.html">GESTION DE PROJET</a></li>
+						<li><a href="conclu.html">POUR FINIR...</a></li>
+					</ul>
+				</div>
+			</div>
+			<div id="page" class="container">
+				<div id="content">
+					<!--<div class="title">
+						<h2>Notre base de donn&eacute;es</h2>
+					</div>
+					<ul>
+						<li>Regroupe tous les dispositifs que nous avions recens&eacute;s</li>
+						<li>Faite sur PhpMyAdmin</li>
+					</ul>
+					<br/>
+					<div class="title">
+						<h2>Architecture</h2>
+					</div>
+					<ul>
+						<li>Diff&eacute;rents mod&egrave;les</li>
+						<li>Compte 5 tables diff&eacute;rentes</li>
+					</ul>
+					<br/>
+					<div class="title">
+						<h2>Mod&egrave;le conceptuel des donn&eacute;es</h2>
+					</div>
+					<p>
+						<a href="images/mcd.png" target="_blank"><img src="images/mcd.png" alt="Mod&egrave;le conceptuel final" style="width:100%" /></a>
+					</p>
+					<br/>
+					<div class="title">
+						<h2>Mod&egrave;le relationnel sous PhpMyAdmin</h2>
+					</div>
+					<p>
+						<a href="images/mld.png" target="_blank"><img src="images/mld.png" alt="Mod&egrave;le conceptuel final" style="width:100%" /></a>
+					</p>
+					<br/>
+					<div class="title">
+						<h2>R&eacute;alisation</h2>
+					</div>
+					<ul>
+						<li>Validations et suggestions par iUserLab</li>
+						<li>Création d&rsquo;un prototype</li>
+						<li>Implémentation totale de la base par les dispositifs restants</li>
+					</ul>-->
+					<div class="title">
+						<h2>Mod&egrave;le conceptuel des donn&eacute;es</h2>
+					</div>
+					<p>
+						Tout d&rsquo;abord, nous avons d&ucirc; r&eacute;fl&eacute;chir &agrave; l&rsquo;agencement 
+						de notre base de donn&eacute;es. Pour cela, nous avons choisi ensemble  
+						la meilleure solution possible, puis nous avons consult&eacute; Edwige CLERMONT et 
+						<a href="http://iuserlab.com/" target="_blank">iUserLab</a> afin qu&rsquo;ils valident notre 
+						mod&egrave;le ou pour nous faire des suggestions d&rsquo;optimisation et d&rsquo;am&eacute;lioration..
+					</p>
+					<p>
+						Nous avons finalement choisi de cr&eacute;er <b>5 tables</b>&nbsp;:
+					</p>
+					<ul>
+						<li>une pour les d&eacute;ficiences</li>
+						<li>une pour les cat&eacute;gories (et donc sous-cat&eacute;gories)</li>
+						<li>une pour les dispositifs</li>
+						<li>une pour les prix</li>
+						<li>et une pour les sites internet</li>
+					</ul>
+					<p>
+						comportant diff&eacute;rentes informations, notamment un nom et une description (facultative) 
+						pour les d&eacute;ficiences, les cat&eacute;gories et les dispositifs.
+					</p>
+					<div class="affiche">
+						<button onclick="affiche(1)">▼ Afficher le mod&egrave;le conceptuel final ▼</button>
+						<div id="image1" style="display:none">
+							<a href="images/mcd.png" target="_blank"><img src="images/mcd.png" alt="Mod&egrave;le conceptuel final"/></a>
+						</div>
+					</div>
+					<br/><br/>
+					<div class="title">
+						<h2>Mod&egrave;le logique des donn&eacute;es</h2>
+					</div>
+					<p>
+						Ensuite, nous avons d&eacute;termin&eacute; le mod&egrave;le logique des donn&eacute;es qui 
+						d&eacute;coule directement du mod&egrave;le conceptuel et facilite <i>a posteriori</i> la 
+						cr&eacute;ation des diff&eacute;rentes tables en SQL.
+					</p>
+					<div class="affiche">
+						<button onclick="affiche(2)">▼ Afficher le mod&egrave;le logique final ▼</button>
+						<div id="image2" style="display:none">
+							<a href="images/mld.png" target="_blank"><img src="images/mld.png" alt="Mod&egrave;le logique final"/></a>
+						</div>
+					</div>
+					<br/><br/>
+					<div class="title">
+						<h2>Cr&eacute;ation et impl&eacute;mentation des tables sur MySQL</h2>
+					</div>
+					<p>
+						Gr&acirc;ce au mod&egrave;le logique des donn&eacute;es, nous avons p&ucirc; ais&eacute;ment 
+						cr&eacute;er les tables que nous avions d&eacute;termin&eacute;es pr&eacute;alablement. Pour 
+						cela, nous avons utilis&eacute; le langage de d&eacute;finition des donn&eacute;es.
+					</p>
+					<p>
+						Enfin, une fois les 5 tables cr&eacute;&eacute;es, il a fallu les remplir avec les donn&eacute;es que 
+						nous avions recens&eacute;es au premier semestre. Dans un premier temps, nous avons cr&eacute;&eacute;
+						ensemble une &laquo;&nbsp;mini base de donn&eacute;es&nbsp;&raquo; afin d&rsquo;avoir un support 
+						sur lequel tester nos pages PHP. Dans un second temps, Marie a continu&eacute; &agrave; impl&eacute;menter 
+						la base de donn&eacute;es pendant que les autres codaient le site web. 
+						Une fois la moiti&eacute; des donn&eacute;es impl&eacute;ment&eacute;es, &Eacute;milie a pris le relais.
+					</p>
+					<div class="affiche">
+						<button onclick="affiche(3)">▼ Afficher le script SQL utilis&eacute; pour cr&eacute;er les tables de la base de donn&eacute;es ▼</button>
+						<div id="image3" style="display:none">
+							<p style="font: 10pt 'Courier New'">
+								CREATE TABLE `DEFICIENCE`<br/>
+								(`id_deficience` INT(10) AUTO_INCREMENT,<br/>
+								 `nom_def` VARCHAR(50) NOT NULL,<br/>
+								 `texte_def`TEXT DEFAULT NULL,<br/>
+								 PRIMARY KEY (`id_deficience`));<br/><br/>
+								CREATE TABLE `SITE`<br/>
+								(`id_site` INT (10) AUTO_INCREMENT,<br/>
+								 `nom_site` VARCHAR (100) DEFAULT NULL,<br/>
+								 `url` VARCHAR (150) NOT NULL,<br/>
+								 PRIMARY KEY(`id_site`));<br/><br/>
+								CREATE TABLE `CATEGORIE`<br/>
+								(`id_categorie` INT(10) AUTO_INCREMENT,<br/>
+								 `nom_cat` VARCHAR(100) NOT NULL, <br/>
+								 `texte_cat` TEXT DEFAULT NULL,<br/>
+								 `niveau` INT (3) DEFAULT NULL,<br/>
+								 PRIMARY KEY (`id_categorie`),<br/>
+								 `id_def_cat` INT(10) DEFAULT NULL,<br/>
+								 FOREIGN KEY(`id_def_cat`) REFERENCES `DEFICIENCE`(`id_deficience`),<br/>
+								 `id_cat_prec` INT(10) DEFAULT NULL,<br/>
+								 FOREIGN KEY (`id_cat_prec`) REFERENCES `CATEGORIE`(`id_categorie`));<br/><br/>
+								CREATE TABLE `DISPOSITIF`<br/>
+								(`id_dispositif` INT(10) AUTO_INCREMENT,<br/>
+								 `nom_dis` VARCHAR(100) NOT NULL,<br/>
+								 `description` LONGTEXT DEFAULT NULL,<br/>
+								 `image` VARCHAR(100) DEFAULT NULL,<br/>
+								 `id_cat_dis` INT(10) NOT NULL,<br/>
+								 `id_site_fab` INT(10) NOT NULL,<br/>
+								 PRIMARY KEY (`id_dispositif`),<br/>
+								 FOREIGN KEY (`id_cat_dis`) REFERENCES `CATEGORIE` (`id_categorie`),<br/>
+								 FOREIGN KEY (`id_site_fab`) REFERENCES `SITE` (`id_site`));<br/><br/>
+								CREATE TABLE `PRIX`
+								(`id_prix` INT(10) AUTO_INCREMENT,<br/>
+								 `prix` TEXT DEFAULT NULL,<br/>
+								 `id_dis_prix` INT(10) NOT NULL,<br/>
+								 `id_site_vente` INT(10) NOT NULL,<br/>
+								 PRIMARY KEY(`id_prix`),<br/>
+								 FOREIGN KEY (`id_site_vente`) REFERENCES `SITE` (`id_site`),<br/>
+								 FOREIGN KEY (`id_dis_prix`) REFERENCES `DISPOSITIF`(`id_dispositif`));
+							</p>
+						</div>
+					</div>
+					<br/>
+					<p>
+						Pour télécharger la base de donn&eacute;es, veuillez <a href="bdd_transdi.sql">cliquer ici</a>
+					</p>
+				</div>
+				<div id="sidebar">
+					<div class="box1">
+						<div class="title">
+							<h2>&Eacute;l&egrave;ves</h2>
+						</div>
+						<ul class="style2">
+							<li>Marie GUIRAUTE</li>
+							<li>Marwa MATHLOUTHI</li>
+							<li>&Eacute;milie ROGER</li>
+							<li>Alexia TARTAS</li>
+						</ul>
+					</div>
+					<div class="box1">
+						<div class="title">
+							<h2>Tutrices</h2>
+						</div>
+						<ul class="style2">
+							<li>Nathalie PIN&Egrave;DE</li>
+							<li>V&eacute;ronique LESPINET-NAJIB</li>
+						</ul>
+					</div>
+					<div class="box2">
+						<div class="title">
+							<h2>Associ&eacute;s</h2>
+						</div>
+						<ul class="style2">
+							<li>iUserLab</li>
+							<li>Genevi&egrave;ve VIDAL</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="copyright" class="container">
+			<p>&copy; DAT&Agrave;C – Tous droits r&eacute;serv&eacute;s | Design by <a href="http://templated.co" rel="nofollow">TEMPLATED</a></p>
+		</div>
+	</body>
+	
+</html>
+
+<script>
+	function affiche(i) 
+		{
+			var element = document.getElementById("image"+i);
+			if(element.style.display == "none")
+			{
+				element.style.display = "block";
+			}
+			else 
+			{
+				element.style.display = "none";
+			}
+		}
+</script>

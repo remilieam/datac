@@ -1,0 +1,110 @@
+body 
+{
+    color: black;
+	border: black;
+	text-align: left;
+	background-image: url("../images/datac_logo.png");
+	background-repeat: no-repeat; 
+	background-attachment: fixed; 
+	background-size: 12%;
+	font: 14px Times New Roman;
+}
+
+header
+{
+    margin: auto;
+	width: 60%;
+	top: 0px;
+}
+
+h1
+{
+	text-align: center;
+	border: black 1px solid;
+	border-radius: 10px;
+	background-color: rgb(72,104,369);
+	padding: 10px 100px 10px 100px;
+	font-family: Calibri;
+}
+
+section
+{
+    border-radius: 10px;
+	margin: auto;
+	width: 60%;
+	padding: auto;
+	vertical-align: top;
+}
+
+article 
+{
+	margin: 10px auto 10px auto;
+    border: black 1px solid;
+    border-radius: 10px;
+	background-color: rgba(209,243,248,0.90);
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.presentation
+{
+    border: black 1px solid;
+    background-color: rgba(219,243,248,0.70);
+    font: 16px Trebuchet MS;
+    padding-left: 10px;
+    padding-right: 10px;
+	text-align: justify;
+}
+
+.ariane 
+{
+    font-style: italic;
+    font-size: 14px;
+}
+
+.liste_produit
+{
+    font: 16px Geneva;
+    font-style: italic;
+    padding-left: 20px;
+}
+
+.titre_dispositif
+{
+    font: 16px Geneva;
+    color: rgb(46,0,108);
+}
+
+.descrp
+{
+	text-align: justify;
+}
+
+a.bouton_connexion
+{
+    border: 1px black solid;
+    border-radius: 4px;
+    text-decoration: none;
+    color: white;
+	font-size: 20px;
+    padding: 10px 10px 10px 10px;
+    text-align: center;
+    width: 130px;
+    background-color: rgb(40,075,208) ;
+}
+
+p.bouton_connexion
+{
+	text-align: right;
+	color: white;
+}
+
+tr.dispositif
+{
+	vertical-align: top;
+}
+
+td.dispositif
+{
+	width: 4cm;
+}
